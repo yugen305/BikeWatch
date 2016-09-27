@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-	resources :posts	
+	resources :bikes, except: :index
 
   get 'welcome/index'
 
   root 'welcome#index'
+
 end
